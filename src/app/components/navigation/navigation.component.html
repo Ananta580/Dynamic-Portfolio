@@ -1,27 +1,15 @@
 <nav>
     <ul class="navigation-bar">
         <section class="navigation-title">
-            <li>Ananta Poudel</li>
+            <li routerLink="/">{{name}}</li>
         </section>
         <section class="navigation-menu">
-            <li class="navigation-menu-item">
-                <span class="fa"></span>
-                Skills
+            <li *ngFor="let menu of menuList" routerLink="/{{menu.Link}}" class="navigation-menu-item dissapear">
+                <span class="{{menu.Icon}}"></span>
+                {{menu.Name}}
             </li>
-            <li class="navigation-menu-item">
-                <span class="fa"></span>
-                Education
-            </li>
-            <li class="navigation-menu-item">
-                <span class="fa"></span>
-                Projects
-            </li>
-            <li class="navigation-menu-item">
-                <span class="fa"></span>
-                Contact
-            </li>
-            <li class="burger-menu">
-                <span class="fa fa-bars"></span>
+            <li class="burger-menu navigation-menu-item">
+                <span class="fas fa-bars"></span>
             </li>
         </section>
     </ul>

@@ -1,0 +1,39 @@
+{
+    "NavigationBar": {
+        "Name": "Ananta Poudel",
+        "MenuList": [
+            {
+                "Name": "Skills",
+                "Icon": "fas fa-ribbon",
+                "Link": "Skill"
+            },
+            {
+                "Name": "Education",
+                "Icon": "fas fa-user-graduate",
+                "Link": "Education"
+            },
+            {
+                "Name": "Projects",
+                "Icon": "fas fa-tasks",
+                "Link": "Projects"
+            },
+            {
+                "Name": "Contact",
+                "Icon": "fas fa-address-card",
+                "Link": "Contact"
+            }
+        ]
+    },
+    "HomePage": {
+        "Title": "Hello, I am a",
+        "Expertise": [
+            "Software Developer",
+            "Graphics Designer"
+        ],
+        "Button": {
+            "Name": "Connect",
+            "Icon": "fa fa-paper-plane icons"
+        },
+        "Description": "with Programming & Designing knowledge."
+    }
+}

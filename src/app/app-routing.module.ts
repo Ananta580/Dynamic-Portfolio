@@ -5,9 +5,10 @@ import { SkillComponent } from './components/skill/skill.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'skill', component: SkillComponent },
-  { path: 'projects', component: HomeComponent },
-  { path: 'contact', component: HomeComponent },
+  { path: 'Skill', component: SkillComponent },
+  { path: 'Projects', component: HomeComponent },
+  { path: 'Education', component: HomeComponent },
+  { path: 'Contact', component: HomeComponent },
 ];
 
 @NgModule({
