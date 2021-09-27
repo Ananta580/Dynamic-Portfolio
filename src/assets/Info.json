@@ -35,5 +35,69 @@
             "Icon": "fa fa-paper-plane icons"
         },
         "Description": "with Programming & Designing knowledge."
+    },
+    "SkillPage": {
+        "Title": "Hey, Everyone",
+        "Description": "",
+        "ExpertiseOne": {
+            "Name": "Software Development",
+            "Skills": [
+                {
+                    "Name": ".NET Core",
+                    "Description": "with Programming & Designing knowledge.",
+                    "Image": "dotNet.jpg"
+                },
+                {
+                    "Name": "Angular",
+                    "Description": "with Programming & Designing knowledge.",
+                    "Image": "angular.jpg"
+                },
+                {
+                    "Name": "Javascript",
+                    "Description": "with Programming & Designing knowledge.",
+                    "Image": "js.jpg"
+                },
+                {
+                    "Name": "Typescript",
+                    "Description": "with Programming & Designing knowledge.",
+                    "Image": "ts.jpg"
+                },
+                {
+                    "Name": "AWS",
+                    "Description": "with Programming & Designing knowledge.",
+                    "Image": "aws.jpg"
+                },
+                {
+                    "Name": "Ionic",
+                    "Description": "with Programming & Designing knowledge.",
+                    "Image": "ionic.jpg"
+                },
+                {
+                    "Name": "SQL / NOSQL",
+                    "Description": "with Programming & Designing knowledge.",
+                    "Image": "db.jpg"
+                }
+            ]
+        },
+        "ExpertiseTwo": {
+            "Name": "Graphics Designing",
+            "Skills": [
+                {
+                    "Name": "Illustrator",
+                    "Description": "with Programming & Designing knowledge.",
+                    "Image": "ai.jpg"
+                },
+                {
+                    "Name": "Photoshop",
+                    "Description": "with Programming & Designing knowledge.",
+                    "Image": "ps.jpg"
+                },
+                {
+                    "Name": "Adobe XD",
+                    "Description": "with Programming & Designing knowledge.",
+                    "Image": "xd.jpg"
+                }
+            ]
+        }
     }
 }

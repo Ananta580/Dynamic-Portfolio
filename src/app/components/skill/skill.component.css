@@ -1,11 +1,83 @@
 .skill {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
+  width: 95%;
+  display: flex;
+  margin: 30px;
+  z-index: -1;
+}
+
+.description {
+  width: 30%;
+  padding: 10px;
+}
+
+.description-title {
+  font-size: 50px;
+  color: dodgerblue;
+}
+
+.description-body {
+  padding: 25px 0;
+  color: #4d4d4d;
+  line-height: initial;
+}
+
+.large-button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #aaa;
+  transition: 1s;
+}
+
+.large-button:hover {
+  background-color: #fff;
+  color: #7cc77b;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.skill-card-container {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-card {
+  width: 190px;
+  height: 190px;
+  border-collapse: collapse;
+  filter: grayscale(0.7);
   display: flex;
   justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  padding: 10px;
+  color: #aaa;
+  transition: 1s;
+  animation: rotating 2s alternate;
+}
+
+.skill-card:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+  transition: 1s;
+}
+
+.large-icon {
+  font-size: 150px;
+}
+
+.rotate {
+  animation: rotating 5s alternate infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }

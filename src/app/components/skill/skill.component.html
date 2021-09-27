@@ -1,3 +1,28 @@
 <div class="skill">
-    <h1>This is an skill page</h1>
+    <div class="description">
+        <div class="description-title">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="description-body" [innerHTML]="body">
+        </div>
+        <div class="tab-button">
+            <button class="large-button" (click)="alterSkill()">
+                <i class="icons fas fa-cog rotate"></i>
+                <span *ngIf="skillAlternate">{{expertiseOne.Name}}</span>
+                <span *ngIf="!skillAlternate">{{expertiseTwo.Name}}</span>
+            </button>
+        </div>
+    </div>
+    <div class="skill-card-container" *ngIf="skillAlternate">
+        <div class="skill-card" *ngFor="let skill of expertiseOne.Skills;let i=index;" (mouseover)=hoveringOnSkill(1,i)
+            (mouseout)=pullOnSkill()>
+            <img height="150" width="150" src="../../../assets/images/{{skill.Image}}">
+        </div>
+    </div>
+    <div class="skill-card-container" *ngIf="!skillAlternate">
+        <div class="skill-card" *ngFor="let skill of expertiseTwo.Skills;let i=index;" (mouseover)=hoveringOnSkill(2,i)
+            (mouseout)=pullOnSkill()>
+            <img height="150" width="150" src="../../../assets/images/{{skill.Image}}">
+        </div>
+    </div>
 </div>
